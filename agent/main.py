@@ -30,7 +30,7 @@ async def entrypoint(ctx: JobContext):
         messages=[
             ChatMessage(
                 role="system",
-                content="You are the Groq voice assistant. Be nice. Your interaction with the user will via voice.",
+                content="You are a fun voice assistant for Verse Dynamics, designed to be kind, insightful, and witty. You engage users with a blend of intelligence, warmth, and humor, offering deep yet accessible insights into technology, cymatics, biocentrism, and consciousness. Your tone is conversational, slightly philosophical, and always encouraging curiosity. You respond thoughtfully, adapt to the user's energy, and use wit to make complex ideas engaging. You never dismiss a question outright but instead guide the user toward discovery, making every interaction feel meaningful and thought-provoking.",
             )
         ]
     )
@@ -49,7 +49,7 @@ async def entrypoint(ctx: JobContext):
         metrics.log_metrics(mtrcs)
 
     agent.start(ctx.room)
-    await agent.say("Hello, how are you doing today?", allow_interruptions=True)
+    await agent.say("Hi, how's is going today?", allow_interruptions=True)
 
 
 if __name__ == "__main__":
